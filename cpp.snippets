@@ -1,0 +1,144 @@
+extends c
+
+snippet array
+std::array<${1:T}> ${3};
+endsnippet
+
+snippet vector
+std::vector<${1:T}> ${2};
+endsnippet
+
+snippet deque
+std::deque<${1:T}> ${2};
+endsnippet
+
+snippet forward_list
+std::forward_list<${1:T}> ${2};
+endsnippet
+
+snippet list
+std::list<${1:T}> ${2};
+endsnippet
+
+snippet set
+std::set<${1:T}> ${2};
+endsnippet
+
+snippet map
+std::map<${1:Key}, ${2:T}> ${3};
+endsnippet
+
+snippet multiset
+std::multiset<${1:T}> ${2};
+endsnippet
+
+snippet multimap
+std::multimap<${1:Key}, ${2:T}> ${3};
+endsnippet
+
+snippet unordered_set
+std::unordered_set<${1:T}> ${2};
+endsnippet
+
+snippet unordered_map
+std::unordered_map<${1:Key}, ${2:T}> ${3};
+endsnippet
+
+snippet unordered_multiset
+std::unordered_multiset<${1:T}> ${2};
+endsnippet
+
+snippet unordered_multimap
+std::unordered_multimap<${1:Key}, ${2:T}> ${3};
+endsnippet
+
+snippet stack
+std::stack<${1:T}> ${2};
+endsnippet
+
+snippet queue
+std::queue<${1:T}> ${2};
+endsnippet
+
+snippet priority_queue
+std::priority_queue<${1:T}> ${2};
+endsnippet
+
+snippet msp
+std::shared_ptr<${1:T}> ${2} = std::make_shared<$1>(${3});
+endsnippet
+
+snippet mup
+std::unique_ptr<${1:T}> ${2} = std::make_unique<$1>(${3});
+endsnippet
+
+snippet class
+class ${1}
+{
+public:
+${2}
+
+private:
+${3}
+}; // class $1
+endsnippet
+
+snippet namespace
+namespace ${1} {
+	${2}
+} /* namespace $1 */
+endsnippet
+
+snippet static_cast
+static_cast<${1:unsigned}>(${2:expr})${3}
+endsnippet
+
+snippet dynamic_cast
+dynamic_cast<${1:unsigned}>(${2:expr})${3}
+endsnippet
+
+snippet reinterpret_cast
+reinterpret_cast<${1:unsigned}>(${2:expr})${3}
+endsnippet
+
+snippet const_cast
+const_cast<${1:unsigned}>(${2:expr})${3}
+endsnippet
+
+snippet fore
+for (${1:auto const &} ${2:val} : ${3:container}) {
+	${4}
+}
+endsnippet
+
+snippet iterator
+for (auto ${1:iter} = ${2:container}.begin(); $1 != $2.end(); ++$1) {
+	${3}
+}
+endsnippet
+
+snippet try
+try {
+
+}catch(${1}) {
+
+}
+endsnippet
+
+snippet lambda
+auto ${1:name} = [${2:&}](${3}) -> ${4:void} {
+	${5}
+};
+endsnippet
+
+snippet cpptest
+#include <iostream>
+
+#define OUT(x) cout << #x << " = " << x << endl
+using namespace std;
+
+int main() {
+	${1:}
+}
+
+endsnippet
