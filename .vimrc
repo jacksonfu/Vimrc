@@ -351,8 +351,10 @@ let g:Lf_StlColorscheme = 'powerline'
 "<C-]> : open in vertical split window
 ":LeaderfRgRecall: recall last seach
 " search tag or function
-noremap <leader>tf :LeaderfFunction<cr> 
-" <leader>f :search file
+noremap <leader>tf :LeaderfFunction<cr>
+" 避免nerdtree的<Leader>fl冲突
+" <leader>sf: search file
+noremap <leader>sf :LeaderfFile<cr>
 " <leader>b :search file in buffer 
 let g:Lf_WindowHeight = 0.30
 let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']

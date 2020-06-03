@@ -313,7 +313,9 @@ let g:UltiSnipsSnippetDirectories=["mysnippets"]
 ":LeaderfRgRecall: recall last seach
 " search tag or function
 noremap <leader>tf :LeaderfFunction<cr> 
-" <leader>f :search file
+" 避免nerdtree的<Leader>fl冲突
+" <leader>sf: search file
+noremap <leader>sf :LeaderfFile<cr>
 " <leader>b :search file in buffer 
 ```
 
