@@ -90,9 +90,8 @@ cp $TMP/c.snippets mysnippets/
 message "all plugins installed successfully, and then continue to config YCM"
 
 cd $HOME/.vim/plugged/YouCompleteMe
-python3 ./install.py --clang-completer --clangd-completer
+python3 ./install.py --clang-completer
 mkdir $HOME/lib/ -p
-ln -s $HOME/.vim/plugged/YouCompleteMe/third_party/ycmd/third_party/clang/lib/libclang.so.* $HOME/lib/
+ln -sf $HOME/.vim/plugged/YouCompleteMe/third_party/ycmd/third_party/clang/lib/libclang.so.10 $HOME/lib/
 echo "export LD_LIBRARY_PATH=\$HOME/lib:\$LD_LIBRARY_PATH" >> $HOME/.bashrc
-ldconfig
 message "vim environment is installed successfully, enjoy it!!!"
