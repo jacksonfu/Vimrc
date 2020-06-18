@@ -379,8 +379,3 @@ let g:airline_theme='luna'
 " echodoc.vim参数提示
 set noshowmode
 let g:echodoc_enable_at_startup = 1
-
-" 换行，并粘贴寄存器0(最近复制)的内容，并能够保持缩进
-" 否则只能依次输入 o esc p == (==是为了回到正确缩进的位置，esc在vim里边无法退出insert并保持缩进)
-" 或者 o c-r 0 (c-r 0 在insert模式下粘贴0寄存器，即最近的内容)
-nnoremap <Leader>mp o<c-r>0
