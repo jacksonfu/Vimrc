@@ -227,10 +227,8 @@ vim +'PlugInstall --sync' +qall
 
 ### `YCM`代码补全和跳转
 ```
-TODO:找到不在当前目录的compile db
-注意：ycm无法跨编译单元跳转到定义，可以先找到所有引用之处，再找cpp中的定义
+注意：ycm无法跨编译单元跳转到定义
 ;gy :YcmCompleter GoTo(实测，先跳本编译单元的定义，再跳声明，但是无法从声明跳回定义)
-;jr :YcmCompleter GoToReferences
 ;sd :YcmShowDetailedDiagnostic 展示ycm诊断光标所指的行的细节(show debug)
 
 需要先在项目的目录生成compile_commands.json,一些构建工具生成的方法如下:

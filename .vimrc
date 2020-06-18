@@ -233,7 +233,6 @@ let g:ycm_semantic_triggers =  {
             \ 'cs,lua,javascript': ['re!\w{2}'],
             \ }
 nnoremap <leader>gy :YcmCompleter GoTo<CR>
-nnoremap <leader>jr :YcmCompleter GoToReferences<CR>
 nnoremap <leader>sd :YcmShowDetailedDiagnostic<CR>
  
 
