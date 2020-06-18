@@ -37,8 +37,9 @@ sudo apt-get install autoconf curl wget git cmake libncurses5-dev python-dev pyt
 ```
 ## 自动安装及配置vim(如果没有安装vim8.1或以上版本，将会自动安装)：
 ```
-git clone https://github.com/jacksonfu/Vimrc.git
-cd Vim/
+wget https://github.com/jacksonfu/Vimrc/archive/v1.0.tar.gz -O vimrc.tar.gz
+tar zxf vimrc.tar.gz
+cd Vimrc-1.0
 chmod +x install.sh
 ./install.sh
 ```
