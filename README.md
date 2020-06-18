@@ -1,11 +1,10 @@
 # 目录
-   * [环境](#环境)
+   * [安装环境](#安装环境)
       * [自动安装及配置vim(如果没有安装vim8.1或以上版本，将会自动安装)：](#自动安装及配置vim如果没有安装vim81或以上版本将会自动安装)
       * [基本快速跳转](#基本快速跳转)
       * [vim配置默认功能的快捷键](#vim配置默认功能的快捷键)
       * [此vim配置中的操作](#此vim配置中的操作)
          * [vim自身的骚操作](#vim自身的骚操作)
-         * [简化换行粘贴保持缩进的步骤](#简化换行粘贴保持缩进的步骤)
          * [一键编译](#一键编译)
          * [取消缩进和增加缩进](#取消缩进和增加缩进)
             * [Visual 模式下](#visual-模式下)
@@ -26,9 +25,11 @@
          * [wildfire.vim结对符内编辑](#wildfirevim结对符内编辑)
          * [ctrlsf.vim查找并替换](#ctrlsfvim查找并替换)
          * [vim-multiple-cursors多处替换相同的单词](#vim-multiple-cursors多处替换相同的单词)
-         * [airblade/vim-gitgutter git操作](#airblade-vim-gitguttergit跳转)
+         * [airblade/vim-gitguttergit操作](#airbladevim-gitguttergit操作)
+         * [vim-airline/vim-airlinetabline](#vim-airlinevim-airlinetabline)
       * [Reference](#reference)
-# 环境
+
+# 安装环境
 - system: Ubuntu 16.04(docker镜像中测试通过)
 - dependency
 ```
@@ -345,6 +346,23 @@ hunk：有变化的代码块
 <leader>hs   先选择几行，然后执行就可以git add this hunk
 <leader>hu   先选择几行，然后执行就可以git checkout this hunk
 <leader>hp   preview
+```
+
+### `vim-airline/vim-airline`tabline
+```
+第1-10个tab(需要更多tab时设置 buffer_idx_mode 为2或者3
+nmap <leader>1 <Plug>AirlineSelectTab1
+nmap <leader>2 <Plug>AirlineSelectTab2
+nmap <leader>3 <Plug>AirlineSelectTab3
+nmap <leader>4 <Plug>AirlineSelectTab4
+nmap <leader>5 <Plug>AirlineSelectTab5
+nmap <leader>6 <Plug>AirlineSelectTab6
+nmap <leader>7 <Plug>AirlineSelectTab7
+nmap <leader>8 <Plug>AirlineSelectTab8
+nmap <leader>9 <Plug>AirlineSelectTab9
+前一个，后一个tab
+nmap <leader>- <Plug>AirlineSelectPrevTab
+nmap <leader>+ <Plug>AirlineSelectNextTab
 ```
 
 ## Reference
