@@ -26,7 +26,7 @@
          * [wildfire.vim结对符内编辑](#wildfirevim结对符内编辑)
          * [ctrlsf.vim查找并替换](#ctrlsfvim查找并替换)
          * [vim-multiple-cursors多处替换相同的单词](#vim-multiple-cursors多处替换相同的单词)
-         * [mhinz/vim-signifygit跳转](#mhinzvim-signifygit跳转)
+         * [airblade/vim-gitgutter git操作](#airblade-vim-gitguttergit跳转)
       * [Reference](#reference)
 # 环境
 - system: Ubuntu 16.04(docker镜像中测试通过)
@@ -337,10 +337,14 @@ esc 退出
 选中后, 可以进行增删替换a/c/x等
 ```
 
-### `mhinz/vim-signify`git跳转
+### `airblade/vim-gitgutter`git操作
 ```
 ]c   跳转到下一个diff处
 [c   跳转到上一个diff处
+hunk：有变化的代码块
+<leader>hs   先选择几行，然后执行就可以git add this hunk
+<leader>hu   先选择几行，然后执行就可以git checkout this hunk
+<leader>hp   preview
 ```
 
 ## Reference

@@ -104,7 +104,6 @@ Plug 'iamcco/markdown-preview.vim'
 Plug 'lfv89/vim-interestingwords'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'skywind3000/vim-preview'
-Plug 'mhinz/vim-signify'
 Plug 'Shougo/echodoc.vim'
 Plug 'vim-scripts/a.vim'
 Plug 'justinmk/vim-dirvish'
@@ -115,6 +114,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'leafgarland/typescript-vim'
+Plug 'airblade/vim-gitgutter'
 
 
 " List ends here. Plugins become visible to Vim after this call.
@@ -337,9 +337,7 @@ noremap <Leader>u :PreviewScroll -1<cr> " 往上滚动预览窗口
 noremap <leader>d :PreviewScroll +1<cr> "  往下滚动预览窗口k
 
 
-" vim-signify 版本控制
-let g:signify_vcs_list = [ 'git','svn','cvs' ]
-let g:signify_sign_show_text = 1
+" airblade/vim-gitgutter 版本控制
 
 
 " LeaderF函数列表
