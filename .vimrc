@@ -347,6 +347,8 @@ noremap <leader>sf :LeaderfFile<cr>
 " <leader>b :search file in buffer 
 let g:Lf_WindowHeight = 0.30
 let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']
+" Whether to visit directories pointed to by symlinks when indexing. 1:yes
+let g:Lf_FollowLinks = 1
 
 
 " ctrlsf.vim 查找
