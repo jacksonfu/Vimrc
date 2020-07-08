@@ -15,7 +15,6 @@
          * [在*.cpp和*.h文件间切换](#在cpp和h文件间切换)
          * [YCM代码补全和跳转](#ycm代码补全和跳转)
          * [NERDtree目录树](#nerdtree目录树)
-         * [MiniBufExplorer多文档编辑](#minibufexplorer多文档编辑)
          * [markdown-previewmarkdown 即时预览](#markdown-previewmarkdown-即时预览)
          * [scrooloose/nerdcommenter快速注释](#scrooloosenerdcommenter快速注释)
          * [Lokaltog/vim-easymotion快速移动](#lokaltogvim-easymotion快速移动)
@@ -247,16 +246,6 @@ r:刷新工程目录文件列表
 I:显示/隐藏隐藏文件
 m:出现创建/删除/剪切/拷贝操作列表
 ```
-	
-### `MiniBufExplorer`多文档编辑
-```
-" 显示/隐藏 MiniBufExplorer 窗口
-map <Leader>me :MBEToggle<cr>
-" buffer 切换快捷键
-map <Leader>wl :MBEbn<cr>
-map <Leader>wh :MBEbp<cr>
-```
-使用切换窗口到达MiniBufExplorer 窗口上的buffer标识上时，键入 d 删除光标所在的 buffer，键入 s 将该 buffer 对应 window 与先前 window 上下排列，键入 v 则左右排列（光标必须在 buffer 列表子窗口内）。
 
 ### `markdown-preview`markdown 即时预览
 ```
