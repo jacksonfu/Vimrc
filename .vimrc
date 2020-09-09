@@ -349,6 +349,7 @@ let g:Lf_WindowHeight = 0.30
 let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']
 " Whether to visit directories pointed to by symlinks when indexing. 1:yes
 let g:Lf_FollowLinks = 1
+let g:Lf_ShowDevIcons = 0
 
 
 " ctrlsf.vim 查找

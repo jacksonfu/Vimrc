@@ -299,6 +299,7 @@ noremap <leader>tf :LeaderfFunction<cr>
 " <leader>sf: search file
 noremap <leader>sf :LeaderfFile<cr>
 " <leader>b :search file in buffer 
+关闭了第一列的乱码显示：https://github.com/Yggdroot/LeaderF/issues/588#issuecomment-623236506
 ```
 
 ### `vim-indent-guides`缩进可视化
