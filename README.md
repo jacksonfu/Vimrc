@@ -314,10 +314,19 @@ let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "i>", "ip"]
 
 ### `ctrlsf.vim`查找并替换
 ```
+使用方法
+:CtrlSF [arguments] {pattern} [path] ...
+nnoremap <Leader>sp :CtrlSF<space>
 ;sp 再输入需要搜索的关键词，即可在工程内全局查找光标所在关键字
  <C-J> <C-K> 跳到下一个或者上一个匹配
 o 打开该文件 p 预览 u 恢复
 搜索制定文件 :CtrlSF <pattern> *.py
+<C-J> <C-K> 跳到下一个或者上一个匹配
+o 打开该文件 p 预览 u 恢复 q 退出
+enter 打开光标指向的某文件的某行
+搜索指定文件 :CtrlSF <pattern> *.py
+:CtrlSFOpen :CtrlSFToggle 重新打开关闭的窗口
+M 在跳转结果中键入时，可以打开一个类似quickfix窗口的结果
 ```
 
 ### `vim-multiple-cursors`多处替换相同的单词
