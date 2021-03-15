@@ -263,7 +263,7 @@ let NERDTreeIgnore=['\.d$','\.o$','\.swp$','\.tgz$','\.clangd$']
 
 " wildfire结对符
 " 快速选中结对符内的文本
-map <SPACE> <Plug>(wildfire-fuel)
+map <Leader>( <Plug>(wildfire-fuel)
 " 适用于哪些结对符
 let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "i>", "ip"]
 
