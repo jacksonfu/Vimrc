@@ -126,7 +126,10 @@ map <silent> <F11> :call ToggleFullscreen()<CR>
 解决复制到vim下会自动缩进和自动加注释的问题
 先 :set paste 进入复制模式
 再进入insert模式，再粘贴
-" f2进入或者退出paste模式
+
+" 进入复制模式可以用快捷键简化
+" change paste退出或者进入paste模式
+set pastetoggle=<Leader>cp
 ```
 
 ## 此vim配置中的操作

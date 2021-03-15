@@ -9,8 +9,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 set backspace=2
 set nofixendofline
 
-" 按f2退出或者进入paste模式
-set pastetoggle=<F2>
+" f2太远,change paste退出或者进入paste模式
+set pastetoggle=<Leader>cp
 
 " 在插入模式并且必要情况下不需要移动到方向键上
 inoremap <C-h> <Left>
