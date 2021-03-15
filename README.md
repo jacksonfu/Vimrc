@@ -70,12 +70,6 @@ d0 d^ d$=D dw dgg dG
 " fix:leader会影响f跳转当前行的速度(比如f ;跳转到下一个;处,改成<Enter>减少冲突)
 let mapleader="\<CR>"
 ```
-
-```
-" esc键有点远,quit insert退出插入模式
-inoremap qi <ESC>
-```
-
 ```
 " 定义快捷键到行首和行尾
 " 0

@@ -1,6 +1,5 @@
 " 定义快捷键的前缀，即 <Leader>
 let mapleader="\<CR>"
-inoremap qi <ESC>
 
 " language setting
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
