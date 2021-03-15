@@ -36,6 +36,12 @@ func! Catfile()
 endfunc
 nmap <F9> :call Catfile()<CR>
 
+function! F() range
+    execute a:firstline.",".a:lastline.'s/\[/{/g'
+    execute a:firstline.",".a:lastline.'s/\]/}/g'
+endfunction
+vmap <Leader>tm :'<,'>call F()<CR>
+
 " vim 自身（非插件）快捷键
 " 行尾
 nmap <Leader>e $

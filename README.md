@@ -167,6 +167,16 @@ nmap <F7> :call CompileRun()<CR>
 ```
 在项目的目录下新建build.sh，里边编写编译规则，便可以使用F7进行快速编译
 
+### 可视化模式下批量替换多行内容
+```
+function! F() range
+    execute a:firstline.",".a:lastline.'s/\[/{/g'
+    execute a:firstline.",".a:lastline.'s/\]/}/g'
+endfunction
+
+vmap <Leader>tm :'<,'>call F()<CR>
+```
+
 
 ### 取消缩进和增加缩进
 #### Visual 模式下 
