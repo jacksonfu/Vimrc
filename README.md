@@ -67,7 +67,8 @@ d0 d^ d$=D dw dgg dG
 ## vim配置默认功能的快捷键
 ```
 " 定义快捷键的前缀，即<Leader>
-let mapleader=";"
+" fix:leader会影响f跳转当前行的速度(比如f ;跳转到下一个;处,改成<Enter>减少冲突)
+let mapleader="\<CR>"
 ```
 
 ```
