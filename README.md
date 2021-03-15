@@ -69,6 +69,12 @@ d0 d^ d$=D dw dgg dG
 " 定义快捷键的前缀，即<Leader>
 let mapleader=";"
 ```
+
+```
+" esc键有点远,quit insert退出插入模式
+inoremap qi <ESC>
+```
+
 ```
 " 定义快捷键到行首和行尾
 " 0
