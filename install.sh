@@ -21,11 +21,11 @@ function addBinPath()
 
 function install_vim()
 {
-    pkg=vim-8.1.tar.bz2
+    pkg=vim-8.2.tar.gz
 
     cd $TMP
-    download "ftp://ftp.vim.org/pub/vim/unix/vim-8.1.tar.bz2" $pkg
-    tar jxf $pkg
+    download "https://github.com/vim/vim/archive/refs/tags/v8.2.3540.tar.gz" $pkg
+    tar zxf $pkg
     dir=`tar tf $pkg | head -1`
     cd $dir
     ./configure --with-features=huge --enable-multibyte \
@@ -44,21 +44,21 @@ cp .vimrc $TMP/
 cp cpp.snippets $TMP/
 cp c.snippets $TMP/
 cp ycm_extra_conf.py $HOME/.ycm_extra_conf.py
-# vim version >= 8.1
+# vim version >= 8.2
 if [ -x "$(command -v vim)" ]; then
-    validversion=8.1
+    validversion=8.2
     version=`vim --version | head -1 | awk '{print $5}'`
     if version_ge $version $validversion ;then
-        message "vim-version is great than or equal to vim-8.1, continue!"
+        message "vim-version is great than or equal to vim-8.2, continue!"
     else
-        message "vim-version is less than 8.1, and then vim-8.1 will be installed!"
+        message "vim-version is less than 8.1, and then vim-8.2 will be installed!"
         install_vim
-        message "install vim-8.1 successfully!"
+        message "install vim-8.2 successfully!"
     fi
 else
-    message "vim-version is less than 8.1, and then vim-8.1 will be installed!"
+    message "vim-version is less than 8.2, and then vim-8.2 will be installed!"
     install_vim
-    message "install vim-8.1 successfully!"
+    message "install vim-8.2 successfully!"
 fi
 
 addBinPath
@@ -92,6 +92,6 @@ message "all plugins installed successfully, and then continue to config YCM"
 cd $HOME/.vim/plugged/YouCompleteMe
 python3 ./install.py --clang-completer
 mkdir $HOME/lib/ -p
-ln -sf $HOME/.vim/plugged/YouCompleteMe/third_party/ycmd/third_party/clang/lib/libclang.so.10 $HOME/lib/
+ln -sf $HOME/.vim/plugged/YouCompleteMe/third_party/ycmd/third_party/clang/lib/libclang.so.* $HOME/lib/
 echo "export LD_LIBRARY_PATH=\$HOME/lib:\$LD_LIBRARY_PATH" >> $HOME/.bashrc
 message "vim environment is installed successfully, enjoy it!!!"
